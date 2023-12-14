@@ -2,6 +2,8 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
+
 
 data = {
     'Komentar': [
@@ -40,6 +42,7 @@ def preprocessing():
 
     sentence = st.text_area("Masukkan Kalimat:", "")
     st.button("Analisis")
+    # Add code for preprocessing here
 
 def display_data():
     st.subheader("Praproses")
